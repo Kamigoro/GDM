@@ -4,7 +4,7 @@
 /// dylan-piette@hotmail.fr
 /// </summary>
 
-namespace GDM
+namespace GDMLibrary
 {
     public static class Commands
     {

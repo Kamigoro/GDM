@@ -9,7 +9,7 @@ using System.Text;
 /// </summary>
 
 
-namespace GDM
+namespace GDMLibrary
 {
     public class GDM
     {
@@ -28,6 +28,17 @@ namespace GDM
             SerialPort.StopBits = StopBits.One;
             SerialPort.DataBits = 8;
             SerialPort.Open();
+        }
+
+        /// <summary>
+        /// Close the current connection to the GDM if there is one existing.
+        /// </summary>
+        public void CloseConnection()
+        {
+            if (SerialPort.IsOpen)
+            {
+                SerialPort.Close();
+            }
         }
 
         /// <summary>
