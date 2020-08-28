@@ -9,7 +9,7 @@ using System.Text;
 /// </summary>
 
 
-namespace GDM_8351
+namespace GDM
 {
     public class GDM
     {
